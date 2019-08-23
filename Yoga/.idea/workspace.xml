@@ -19,8 +19,32 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="yoga@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="yoga@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="yoga@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="yoga: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+    </expand>
     <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -37,9 +61,14 @@
   </component>
   <component name="ProjectId" id="1Pg0uodxtNsrcw9PWGZ3DNN6EIt" />
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Yoga-Venue/src/main/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Yoga-student/src/main/java/com/qf/service/impl" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -49,10 +78,15 @@
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.qf" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\IntelliJ IDEA 2019.2\Date\YJ\Yoga-Venue\src\main\java" />
-      <recent name="D:\IntelliJ IDEA 2019.2\Date\YJ\Yoga-Super_Administrator\src\main\java" />
-      <recent name="D:\IntelliJ IDEA 2019.2\Date\YJ\Yoga-student\src\main\java" />
+      <recent name="D:\IntelliJ IDEA 2019.2\Date\YJ\Yoga-student\src\main\java\com\qf\service\impl" />
+      <recent name="D:\IntelliJ IDEA 2019.2\Date\YJ\Yoga-student\src\main\java\com\qf\service" />
+      <recent name="D:\IntelliJ IDEA 2019.2\Date\YJ\Yoga-student\src\main\resources" />
+      <recent name="D:\IntelliJ IDEA 2019.2\Date\YJ\Yoga-student\src\main\java\com\qf" />
+      <recent name="D:\IntelliJ IDEA 2019.2\Date\YJ\Yoga-student\src\main\java\com\qf\Utils" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -67,6 +101,76 @@
       </list>
     </option>
   </component>
+  <component name="RunManager" selected="Spring Boot.yogaStudentApplication">
+    <configuration name="yogaEurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="Yoga-eureka-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qf.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.qf.yogaEurekaServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="yogaStudentApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="Yoga-student" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qf.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.qf.yogaStudentApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="yogaStudentHomePageApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="Yoga-student-HomePage" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.qf.yogaStudentHomePageApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="yogaZuulApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="Yoga-zull" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qf.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.qf.yogaZuulApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.yogaStudentApplication" />
+        <item itemvalue="Spring Boot.yogaEurekaServerApplication" />
+        <item itemvalue="Spring Boot.yogaZuulApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@2d1436a" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+          </expand>
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -77,11 +181,22 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1566280657223</updated>
-      <workItem from="1566280659368" duration="2599000" />
+      <workItem from="1566280659368" duration="5179000" />
+      <workItem from="1566291856364" duration="15445000" />
+      <workItem from="1566348408179" duration="16997000" />
+      <workItem from="1566437231460" duration="1546000" />
+      <workItem from="1566458228008" duration="1197000" />
+      <workItem from="1566462577623" duration="152000" />
+      <workItem from="1566463004560" duration="594000" />
+      <workItem from="1566466546943" duration="365000" />
+      <workItem from="1566467277409" duration="1528000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.ini" />
   </component>
 </project>

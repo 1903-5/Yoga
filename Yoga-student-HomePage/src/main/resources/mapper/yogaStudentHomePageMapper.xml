@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qf.com.qf.dao.YogaHomePage">
+    <resultMap id="yogaHomePageResult" type="com.qf.com.qf.domain.YogaAdvertisement">
+        <id property="yogaId" column="yoga_id"></id>
+        <result property="yogaName" column="yoga_name"></result>
+        <result property="yogaSource" column="yoga_source"></result>
+        <result property="yogaReleaseTime" column="yoga_release_time"></result>
+        <result property="yogaReadingNumber" column="yoga_reading_number"></result>
+        <result property="yogaGuideReading" column="yoga_guide_reading"></result>
+        <result property="yogaText" column="yoga_text"></result>
+    </resultMap>
+
+    <select id="findAllHomePage" resultMap="yogaHomePageResult">
+        select * from yoga_advertisement
+    </select>
+</mapper>

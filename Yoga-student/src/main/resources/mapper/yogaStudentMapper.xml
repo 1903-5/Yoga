@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qf.dao.YogaStudentDao">
+    <resultMap id="yogaStudentResult" type="com.qf.domain.YogaStudent">
+        <id property="yogaStudentId" column="yoga_student_id"></id>
+        <result property="yogaStudentName" column="yoga_student_name"></result>
+        <result property="yogaStudentPassword" column="yoga_student_password"></result>
+        <result property="yogaStudentPhone" column="yoga_student_phone"></result>
+        <result property="yogaStudentEmail" column="yoga_student_email"></result>
+        <result property="yogaStudentWeChat" column="yoga_student_wechat"></result>
+        <result property="yogaStudentQq" column="yoga_student_qq"></result>
+        <result property="yogaStudentSex" column="yoga_student_sex"></result>
+        <result property="yogaStudentHead" column="yoga_student_head"></result>
+        <result property="yogaStudentAutograph" column="yoga_student_autograph"></result>
+    </resultMap>
+
+    <insert id="phoneStudentAdd" parameterType="com.qf.domain.YogaStudent">
+          insert into yoga_student(yoga_student_id, yoga_student_name,yoga_student_phone, yoga_student_email,
+          yoga_student_wechat,yoga_student_qq,yoga_student_sex,yoga_student_head,yoga_student_autograph) values
+          (#{yogaStudentId},#{yogaStudentName},#{yogaStudentPhone},#{yogaStudentEmail},#{yogaStudentWeChat},#{yogaStudentQq},
+        #{yogaStudentSex},#{yogaStudentHead},#{yogaStudentAutograph})
+    </insert>
+
+    <insert id="emailStudentAdd" parameterType="com.qf.domain.YogaStudent">
+          insert into yoga_student (yoga_student_id, yoga_student_name,yoga_student_phone, yoga_student_email,
+          yoga_student_wechat,yoga_student_qq,yoga_student_sex,yoga_student_head,yoga_student_autograph) values
+          (#{yogaStudentId},#{yogaStudentName},#{yogaStudentPhone},#{yogaStudentEmail},#{yogaStudentWeChat},#{yogaStudentQq},
+        #{yogaStudentSex},#{yogaStudentHead},#{yogaStudentAutograph})
+    </insert>
+
+    <select id="loginName" parameterType="com.qf.domain.YogaStudent" resultMap="yogaStudentResult">
+        select * from yoga_student where yoga_student_name=#{yogaStudentName} and yoga_student_password=#{yogaStudentPassword}
+    </select>
+
+    <select id="loginPhone" parameterType="com.qf.domain.YogaStudent" resultMap="yogaStudentResult">
+        select * from yoga_student where yoga_student_phone=#{yogaStudentPhone} and yoga_student_password=#{yogaStudentPassword}
+    </select>
+
+    <select id="loginEmail" parameterType="com.qf.domain.YogaStudent" resultMap="yogaStudentResult">
+        select * from yoga_student where yoga_student_phone=#{yogaStudentEmail} and yoga_student_password=#{yogaStudentPassword}
+    </select>
+
+    <update id="updateStudent" parameterType="com.qf.domain.YogaStudent">
+        update yoga_student set yoga_student_name=#{yogaStudentName},yoga_student_phone=#{yogaStudentPhone},
+        yoga_student_email=#{yogaStudentEmail},yoga_student_wechat=#{yogaStudentWeChat},yoga_student_qq=#{yogaStudentQq},
+        yoga_student_sex=#{yogaStudentSex},yoga_student_head=#{yogaStudentHead},yoga_student_autograph=#{yogaStudentAutograph}
+        <where>
+            yoga_student_id=#{yogaStudentId}
+        </where>
+    </update>
+
+    <update id="updateStudentPassword" parameterType="com.qf.domain.YogaStudent">
+        update yoga_student set yoga_student_password=#{yogaStudentPassword}
+        <where>
+            yoga_student_email=#{yogaStudentEmail}
+        </where>
+    </update>
+
+    <select id="findYogaStudentName" resultMap="yogaStudentResult">
+        select * from yoga_student where yoga_student_name=#{yogaStudentName}
+    </select>
+
+    <select id="findYogaStudentEmail" resultMap="yogaStudentResult">
+        select * from yoga_student where yoga_student_email=#{yogaStudentEmail}
+    </select>
+
+    <select id="findYogaStudentPhone" resultMap="yogaStudentResult">
+        select * from yoga_student where yoga_student_phone=#{yogaStudentPhone}
+    </select>
+</mapper>

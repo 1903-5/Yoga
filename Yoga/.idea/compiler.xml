@@ -6,12 +6,23 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Yoga-zull" />
         <module name="Yoga-Super_Administrator" />
         <module name="Yoga-coach" />
+        <module name="Yoga-student-HomePage" />
+        <module name="Yoga" />
+        <module name="Yoga-eureka-server" />
         <module name="Yoga-Venue" />
         <module name="Yoga-student" />
-        <module name="Yoga" />
       </profile>
     </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Yoga-eureka-server" options="-parameters" />
+      <module name="Yoga-student" options="-parameters" />
+      <module name="Yoga-student-HomePage" options="-parameters" />
+      <module name="Yoga-zull" options="-parameters" />
+    </option>
   </component>
 </project>
